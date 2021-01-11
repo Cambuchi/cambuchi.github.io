@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+/* this section is related to the python code snippet */
+
+header {
+  grid-row: 2;
+  grid-column: 2/4;
+}
+
+#container {
+  margin: auto;
+  padding: auto;
+  width: 100%
+}
+
+#gutter {
+  border-right-style: solid;
+  border-right-color: #c9d1d9;
+  border-width: 1px;
+}
+
+#pythonsnippet {
+  border-radius: 15px;
+  width: 50%
+}
+
+/* section end */
+
+/* this section is related to header scrolling lock */
+
+.page-header {
+  grid-column: 2/4;
+  height: 0px;
+  background: #CCC;
+  margin: auto;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.nav-wrapper {
+  grid-row: 5;
+  grid-column: 2/4;
+  height: 190px;
+  background: #161b22;
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.nav-wrapper .nav {
+  grid-row: 5;
+  grid-column: 2/4;
+  height: 190px;
+  background: #161b22;
+  padding: 0 0;
+  line-height: 175px;
+  color: #FFF;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 5px 10px #0000007c;
+  z-index: 1;
+}
+
+.nav-wrapper .nav.fixed {
+  grid-column: 2/4;
+  height: 200px;
+  position: fixed;
+  z-index: 1;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 5px 10px #0000007c;
+}
+
+/* section end */
+
+body {
+  background-image: url(../assets/headerbackground.jpg);
+  min-height: 75vmax;
+  -webkit-background-size: 100vmax;
+  -moz-background-size: 100vmax;
+  -o-background-size: 100vmax;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/headerbackground.jpg',     sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/headerbackground.jpg', sizingMethod='scale');
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 150px;
+}
+
+.socialitem {
+  border-style: solid;
+  border-width: 2px;
+  display: inline-flex;
+  width: 90px;
+  height: 90px;
+  margin: auto 35px;
+  background-color: #0000ff00;
+  transform: rotate(45deg);
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 0.25s;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialitem:hover {
+  background-color: #ffcccc00;
+  width: 90px;
+  height: 90px;
+  transform: rotate(0deg);
+}
+
+.socialitem > span {
+  transform: rotate(-45deg);
+  transition: transform 0.25s;
+}
+
+.socialitem:hover > span {
+  transform: rotate(0deg);
+}
+
+.movedown {
+  transform: translateY(25%);
+}
+
+.social {
+  text-align: center;
+}
+
+ul {
+  width: 100%;
+  padding-inline-start: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+  grid-column: 2/4;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  grid-column: 2/4;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 15px
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-500px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-500px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 162, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #161b22;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/* .modal-footer {
+
+} */
+
+button {
+  background-color: #ffffff00;
+  border-color: #ffffff00;
+  color: #ffffff00;
+}
+
+.modal-header h2 {
+  margin:5px;
+}
+
+/* .modal-footer h3 {
+  margin: 0px;
+} */
+
+.image-txt-container {
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+}
+.image-txt-container img {
+  border-radius: 30%;
+  height: 200px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.businesscard li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.business-text {
+  font-size: 20px;
+}
+
+.business-social {
+  font-size: 30px;
+  width: 50px;
+}
+
+.page-content {
+  grid-row: 6;
+  grid-column: 2/4;
+  grid-row-end: 14;
+  background-color: #c9d1d9;
+}
+
+.gridbackground {
+  grid-row: 6;
+  grid-row-end: 14;
+  grid-column: 1/5;
+  background-color: #00383a;
+}
+
+.navfiller {
+  height: 80px;
+  margin: auto;
+}
+
+.page-content p {
+  margin: 15px
+}
