@@ -119,6 +119,7 @@ div#pythonsnippet span {
   width: fit-content;
   border-radius: 15px;
   z-index: 2;
+  box-shadow: 5px 10px #0000007c;
 }
 
 .nav-wrapper .nav {
@@ -129,7 +130,6 @@ div#pythonsnippet span {
   color: #FFF;
   margin: auto;
   border-radius: 15px;
-  box-shadow: 5px 10px #0000007c;
   z-index: 2;
   width: fit-content;
 }
