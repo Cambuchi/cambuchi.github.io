@@ -52,12 +52,15 @@ header {
   margin: auto;
   padding: auto;
   width: 100%;
-  overflow-x: scroll
 }
 
 @media (min-width: 1100px) {
   header {
     width: max-content;
+    overflow-x: hidden;
+  }
+  #container {
+    overflow-x: hidden;
   }
 }
 
