@@ -1,32 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+}
+
+.font-roboto-condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+body { 
+  padding: 0;
+  margin: 0; 
+} 
+
 /* this section is related to the python code snippet */
 
 header {
   position: relative;
-  min-width:35%;        /* Suppose you want minimum width of 1000px */
-  width: fit-content !important;  /* Firefox will set width as auto */
-  /* width:1000px;            As IE6 ignores !important it will set width as 1000px; */
-
+  width: max-content;
   margin: 200px auto 200px;
 }
 
 #container {
   margin: auto;
   padding: auto;
-  width: 100%
+  width: max-content;
+  transform: translateX(-3%)
 }
 
 #gutter {
   border-right-style: solid;
   border-right-color: #c9d1d9;
   border-width: 1px;
+  width: 100%;
+  margin: 2px;
+  line-height: 140%;
+}
+
+#maincode {
+  margin-bottom: 3px;
+  line-height: 140%;
+  transform: translateY(4.5%);
 }
 
 #pythonsnippet {
   border-radius: 15px;
-  width: 50%;
+  width: 100%;
   margin: auto;
+}
+
+span {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* section end */
@@ -46,7 +78,7 @@ header {
   height: fit-content;
   background: #161b22;
   margin: auto;
-  width: fit-content;
+  width: max-content;
   border-radius: 15px;
   z-index: 2;
 }
@@ -61,6 +93,7 @@ header {
   border-radius: 15px;
   box-shadow: 5px 10px #0000007c;
   z-index: 2;
+  width: max-content;
 }
 
 .nav-wrapper .nav.fixed {
@@ -71,7 +104,7 @@ header {
   left: 0;
   right: 0;
   margin: auto;
-  width: fit-content;
+  width: max-content;
   border-radius: 0px 0px 15px 15px;
   box-shadow: 5px 10px #0000007c;
 }
@@ -82,21 +115,17 @@ header {
 
 /* section end */
 
-body {
-  background-image: url(../assets/headerbackground.jpg);
-  min-height: 0px;
-  -webkit-background-size: 100vmax;
-  -moz-background-size: 100vmax;
-  -o-background-size: 100vmax;
+.mainbody {
+  background-image: url('../assets/headerbackground.jpg');
   background-attachment: fixed;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/headerbackground.jpg',     sizingMethod='scale');
-  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/headerbackground.jpg', sizingMethod='scale');
+  display: flow-root;
+  height: 100vh;
 }
 
-body {
+.mainbody {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   margin: 0px;
