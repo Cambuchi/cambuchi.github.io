@@ -246,7 +246,7 @@ ul {
 
 /* Modal Content/Box */
 .modal-content {
-  width: max-content;
+  width: 100%;
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -260,7 +260,27 @@ ul {
   border-radius: 15px;
   word-wrap: break-word;
   overflow-wrap: anywhere;
-  
+}
+
+@media (min-width: 1100px) {
+  .modal-content {
+    width: max-content;
+    overflow-x: hidden;
+  }
+  .business-social {
+    font-size: 30px;
+    width: 50px;
+  }
+  .image-txt-container img {
+    border-radius: 30%;
+    height: 200px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .modal-body {
+    padding: 2px 30px;
+  }
 }
 
 @-webkit-keyframes animatetop {
@@ -296,7 +316,7 @@ ul {
 }
 
 .modal-body {
-  padding: 2px 30px;
+  padding: 2px 10px;
 }
 
 /* .modal-footer {
@@ -325,9 +345,9 @@ button {
 .image-txt-container img {
   border-radius: 30%;
   height: 200px;
-  margin-right: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .businesscard li{
@@ -335,6 +355,8 @@ button {
   margin-bottom: 20px;
   list-style-type: none;
   color: #000000;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .business-text {
@@ -344,8 +366,8 @@ button {
 }
 
 .business-social {
-  font-size: 30px;
-  width: 50px;
+  font-size: 15px;
+  width: 30px;
 }
 
 .page-content {
