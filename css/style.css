@@ -29,14 +29,19 @@
   font-family: 'JetBrainsLight', sans-serif;
 }
 
-* {
+html, body {
 margin: 0px;
 padding: 0px;
+height: 100%
 }
 
-body { 
-  padding: 0;
-  margin: 0; 
+
+body {
+  background-image: url('../assets/headerbackground.jpg');
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -59,9 +64,6 @@ header {
     width: max-content;
     overflow-x: hidden;
   }
-  #container {
-    overflow-x: hidden;
-  }
 }
 
 #gutter {
@@ -80,25 +82,18 @@ header {
   line-height: 140%;
   transform: translateY(4.5%);
   font-family: 'JetBrainsReg', sans-serif;
-  overflow: auto; 
+  
 }
 
 #pythonsnippet {
   border-radius: 15px;
   width: auto;
   margin: auto;
-  overflow: auto;
-}
-
-table {
-  overflow-x: scroll;
 }
 
 div#pythonsnippet span {
   font-family: 'JetBrainsReg', sans-serif;
-  overflow: auto;
 }
-
 
 .modal-header {
   font-family: 'JetBrainsReg', sans-serif;
@@ -159,15 +154,8 @@ div#pythonsnippet span {
 /* section end */
 
 .mainbody {
-  background-image: url('../assets/headerbackground.jpg');
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .mainbody {
@@ -379,7 +367,7 @@ button {
 }
 
 footer {
-  background-color: rgb(15, 38, 39);
+  background-color: #001b1b;
   background-attachment: fixed;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -390,6 +378,6 @@ footer {
   z-index: 0;
   width: 100%;
   padding: 0;
+  margin: 0;
   text-align: center;
 }
-
