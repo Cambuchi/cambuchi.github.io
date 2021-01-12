@@ -262,27 +262,6 @@ ul {
   overflow-wrap: anywhere;
 }
 
-@media (min-width: 1100px) {
-  .modal-content {
-    width: max-content;
-    overflow-x: hidden;
-  }
-  .business-social {
-    font-size: 30px;
-    width: 50px;
-  }
-  .image-txt-container img {
-    border-radius: 30%;
-    height: 200px;
-    margin-right: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .modal-body {
-    padding: 2px 30px;
-  }
-}
-
 @-webkit-keyframes animatetop {
   from {top:-500px; opacity:0} 
   to {top:0; opacity:1}
@@ -368,6 +347,27 @@ button {
 .business-social {
   font-size: 15px;
   width: 30px;
+}
+
+@media (min-width: 1100px) {
+  .modal-content {
+    width: max-content;
+    overflow-x: hidden;
+  }
+  .business-social {
+    font-size: 30px;
+    width: 50px;
+  }
+  .image-txt-container img {
+    border-radius: 30%;
+    height: 200px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .modal-body {
+    padding: 2px 30px;
+  }
 }
 
 .page-content {
