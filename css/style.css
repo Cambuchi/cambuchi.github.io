@@ -37,21 +37,28 @@ padding: 0px;
 body { 
   padding: 0;
   margin: 0; 
-} 
+}
+
 
 /* this section is related to the python code snippet */
 
 header {
-  position: relative;
-  width: max-content;
+  width: 100%;
   margin: 200px auto 200px;
+  overflow-x: scroll
 }
 
 #container {
   margin: auto;
   padding: auto;
-  width: max-content;
-  transform: translateX(-3%)
+  width: 100%;
+  overflow-x: scroll
+}
+
+@media (min-width: 1100px) {
+  header {
+    width: max-content;
+  }
 }
 
 #gutter {
@@ -62,22 +69,35 @@ header {
   margin: 2px;
   line-height: 140%;
   font-family: 'JetBrainsReg', sans-serif;
+  
 }
 
 #maincode {
   margin-bottom: 3px;
   line-height: 140%;
   transform: translateY(4.5%);
-  font-family: 'JetBrainsReg', sans-serif
+  font-family: 'JetBrainsReg', sans-serif;
+  overflow: auto; 
 }
 
 #pythonsnippet {
   border-radius: 15px;
-  width: 100%;
+  width: auto;
   margin: auto;
+  overflow: auto;
 }
 
-span {
+table {
+  overflow-x: scroll;
+}
+
+div#pythonsnippet span {
+  font-family: 'JetBrainsReg', sans-serif;
+  overflow: auto;
+}
+
+
+.modal-header {
   font-family: 'JetBrainsReg', sans-serif;
 }
 
@@ -92,13 +112,13 @@ span {
   width: fit-content;
   border-radius: 15px;
   z-index: 2;
-}
+} 
 
 .nav-wrapper {
   height: fit-content;
   background: #161b22;
   margin: auto;
-  width: max-content;
+  width: fit-content;
   border-radius: 15px;
   z-index: 2;
 }
@@ -113,7 +133,7 @@ span {
   border-radius: 15px;
   box-shadow: 5px 10px #0000007c;
   z-index: 2;
-  width: max-content;
+  width: fit-content;
 }
 
 .nav-wrapper .nav.fixed {
@@ -141,8 +161,10 @@ span {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flow-root;
-  height: 100vh;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .mainbody {
@@ -206,7 +228,7 @@ ul {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 3; /* Sit on top */
-  padding-top: 150px; /* Location of the box */
+  padding-top: 220px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -218,7 +240,7 @@ ul {
 
 /* Modal Content/Box */
 .modal-content {
-  width: fit-content;
+  width: max-content;
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -229,7 +251,10 @@ ul {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-  border-radius: 15px
+  border-radius: 15px;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  
 }
 
 @-webkit-keyframes animatetop {
@@ -303,10 +328,13 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
   list-style-type: none;
+  color: #000000;
 }
 
 .business-text {
-  font-size: calc(10px + .5vw)
+  font-size: calc(10px + .5vw);
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .business-social {
@@ -348,11 +376,17 @@ button {
 }
 
 footer {
-  background-color: cadetblue;
-  height: 100px;
-  z-index: 3;
-  position: relative;
-  padding: 50px;
-  margin-top: 100px  ;
+  background-color: rgb(15, 38, 39);
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  height: 13vh;
+  z-index: 0;
+  width: 100%;
+  padding: 0;
   text-align: center;
 }
+
