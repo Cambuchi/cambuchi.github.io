@@ -1,6 +1,7 @@
 // the section below is related to scrolling lock header
 // cache the element
 var $navBar = $('.nav');
+var $filler = $('.navfiller');
 
 // find original navigation bar position
 var navPos = $navBar.offset().top;
@@ -14,8 +15,10 @@ $(window).scroll(function() {
     // check if scroll position is >= the nav position
     if (scrollPos >= navPos) {
         $navBar.addClass('fixed');
+        $filler.addClass('fixed');
     } else {
         $navBar.removeClass('fixed');
+        $filler.removeClass('fixed');
     }
 
 });
@@ -48,3 +51,12 @@ window.onclick = function(event) {
   }
 }
 // SECTION END
+
+var $setter = $(".nav-wrapper");
+$setter.siblings(".page-content").css("max-width", $setter.width()+"px");
+var $setter = $(".page-content");
+$setter.siblings(".modal-content").css("max-width", $setter.width()+"px");
+
+$(document).ready(function() {
+    $(".gridbackground").css("height", $(".page-content").height());
+  });

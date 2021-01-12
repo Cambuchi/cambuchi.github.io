@@ -3,8 +3,12 @@
 /* this section is related to the python code snippet */
 
 header {
-  grid-row: 2;
-  grid-column: 2/4;
+  position: relative;
+  min-width:35%;        /* Suppose you want minimum width of 1000px */
+  width: fit-content !important;  /* Firefox will set width as auto */
+  /* width:1000px;            As IE6 ignores !important it will set width as 1000px; */
+
+  margin: 200px auto 200px;
 }
 
 #container {
@@ -21,7 +25,8 @@ header {
 
 #pythonsnippet {
   border-radius: 15px;
-  width: 50%
+  width: 50%;
+  margin: auto;
 }
 
 /* section end */
@@ -29,29 +34,25 @@ header {
 /* this section is related to header scrolling lock */
 
 .page-header {
-  grid-column: 2/4;
   height: 0px;
   background: #CCC;
   margin: auto;
-  width: 50%;
+  width: fit-content;
   border-radius: 15px;
+  z-index: 2;
 }
 
 .nav-wrapper {
-  grid-row: 5;
-  grid-column: 2/4;
-  height: 190px;
+  height: fit-content;
   background: #161b22;
   margin: auto;
-  width: 100%;
+  width: fit-content;
   border-radius: 15px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-wrapper .nav {
-  grid-row: 5;
-  grid-column: 2/4;
-  height: 190px;
+  height: fit-content;
   background: #161b22;
   padding: 0 0;
   line-height: 175px;
@@ -59,21 +60,24 @@ header {
   margin: auto;
   border-radius: 15px;
   box-shadow: 5px 10px #0000007c;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-wrapper .nav.fixed {
-  grid-column: 2/4;
-  height: 200px;
+  height: fit-content;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: -15px;
   left: 0;
   right: 0;
   margin: auto;
-  width: 50%;
+  width: fit-content;
   border-radius: 0px 0px 15px 15px;
   box-shadow: 5px 10px #0000007c;
+}
+
+.navfiller.fixed {
+  height: 250px;
 }
 
 /* section end */
@@ -96,10 +100,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   margin: 0px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  grid-auto-rows: 150px;
 }
 
 .socialitem {
@@ -116,6 +116,7 @@ body {
   transition: transform 0.25s;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .socialitem:hover {
@@ -123,6 +124,7 @@ body {
   width: 90px;
   height: 90px;
   transform: rotate(0deg);
+  z-index: 1;
 }
 
 .socialitem > span {
@@ -140,11 +142,13 @@ body {
 
 .social {
   text-align: center;
+  z-index: 1;
 }
 
 ul {
   width: 100%;
   padding-inline-start: 0px;
+  z-index: 1;
 }
 
 /* The Modal (background) */
@@ -152,7 +156,7 @@ ul {
   grid-column: 2/4;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  z-index: 3; /* Sit on top */
   padding-top: 150px; /* Location of the box */
   left: 0;
   top: 0;
@@ -165,13 +169,12 @@ ul {
 
 /* Modal Content/Box */
 .modal-content {
-  grid-column: 2/4;
+  width: fit-content;
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 35%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -212,7 +215,9 @@ ul {
   border-radius: 15px 15px 0 0;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 /* .modal-footer {
 
@@ -252,7 +257,7 @@ button {
 }
 
 .business-text {
-  font-size: 20px;
+  font-size: calc(10px + .5vw)
 }
 
 .business-social {
@@ -261,24 +266,44 @@ button {
 }
 
 .page-content {
-  grid-row: 6;
-  grid-column: 2/4;
-  grid-row-end: 14;
-  background-color: #c9d1d9;
+  margin: auto;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
 }
 
 .gridbackground {
-  grid-row: 6;
-  grid-row-end: 14;
-  grid-column: 1/5;
-  background-color: #00383a;
+  margin: 0;
+  width: 100vw;
+  background-color: #002b2c;
+  z-index: 0;
+  position: absolute;
+  top:1000px
 }
 
 .navfiller {
-  height: 80px;
+  height: 50px;
   margin: auto;
+  background-color: #ffffff00;
 }
 
 .page-content p {
-  margin: 15px
+  padding: 20px;
+}
+
+.page-content h1 {
+  text-align: center;
+  padding-top: 50px;
+  
+}
+
+footer {
+  background-color: cadetblue;
+  height: 100px;
+  z-index: 3;
+  position: relative;
+  padding: 50px;
+  margin-top: 100px  ;
+  text-align: center;
 }
