@@ -77,14 +77,13 @@ header {
 }
 
 .navfiller.fixed {
-  height: 250px;
+  height: 450px;
 }
 
 /* section end */
 
 body {
   background-image: url(../assets/headerbackground.jpg);
-  min-height: 75vmax;
   -webkit-background-size: 100vmax;
   -moz-background-size: 100vmax;
   -o-background-size: 100vmax;
@@ -209,14 +208,14 @@ ul {
 }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 2px 30px;
   background-color: #161b22;
   color: white;
   border-radius: 15px 15px 0 0;
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 2px 30px;
 }
 
 /* .modal-footer {
@@ -279,11 +278,11 @@ button {
   background-color: #002b2c;
   z-index: 0;
   position: absolute;
-  top:1000px
+  top:0
 }
 
 .navfiller {
-  height: 50px;
+  height: 250px;
   margin: auto;
   background-color: #ffffff00;
 }
