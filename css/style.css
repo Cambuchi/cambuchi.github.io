@@ -83,7 +83,7 @@ header {
 #maincode {
   margin-bottom: 3px;
   line-height: 140%;
-  transform: translateY(4.5%);
+  transform: translateY(1.5%);
   font-family: 'JetBrainsReg', sans-serif;
   overflow: auto
 }
