@@ -84,6 +84,7 @@ header {
 
 body {
   background-image: url(../assets/headerbackground.jpg);
+  min-height: 0px;
   -webkit-background-size: 100vmax;
   -moz-background-size: 100vmax;
   -o-background-size: 100vmax;
