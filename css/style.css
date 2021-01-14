@@ -79,10 +79,11 @@ table {
   border-width: 1px;
   width: 100%;
   margin: 0px;
-  line-height: 20px;
+  line-height: 18px;
   font-family: 'JetBrainsReg', sans-serif;
   font-size: calc(7px + .5vw);
-  overflow: auto
+  overflow: auto;
+  height:240;
 }
 
 #guttertd {
@@ -95,11 +96,11 @@ table {
   margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 5px;
-  line-height: 20px;
+  line-height: 16px;
   /*transform: translateY(1.5%);*/
   font-family: 'JetBrainsReg', sans-serif;
-  overflow: auto;
   overflow-y: hidden;
+  height: 240px;
 }
 
 #pythonsnippet {
@@ -127,7 +128,7 @@ div#pythonsnippet span {
 
 #webdev {
   position: absolute;
-  transform: translate3d(-46px, 1.45px, 0px);
+  transform: translate3d(-46px, 2px, 0px);
 }
 
 @media (min-width: 1100px) {
