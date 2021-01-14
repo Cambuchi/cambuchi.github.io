@@ -81,7 +81,7 @@ table {
   margin: 0px;
   line-height: 20px;
   font-family: 'JetBrainsReg', sans-serif;
-  font-size: calc(7px + .5vw);
+  font-size: calc(7px + .2vw);
   overflow: auto
 }
 
@@ -95,10 +95,12 @@ table {
   margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 5px;
-  line-height: 20px;
+  line-height: 1.1em;
+  height: 260px;
   /*transform: translateY(1.5%);*/
   font-family: 'JetBrainsReg', sans-serif;
-  overflow: auto
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #pythonsnippet {
@@ -121,7 +123,7 @@ header {
 
 div#pythonsnippet span {
   font-family: 'JetBrainsReg', sans-serif;
-  font-size: calc(7px + .5vw);
+  font-size: calc(7px + .2vw);
 }
 
 #webdev {
