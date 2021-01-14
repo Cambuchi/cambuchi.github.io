@@ -135,11 +135,13 @@ div#pythonsnippet span {
   #maincode {
     line-height: 25px;
     font-size: calc(7px + .5vw);
+    height: 100%;
 
   }
   #gutter {
     line-height: 25px;
     font-size: calc(7px + .5vw);
+    height: 100%;
   }
   #webdev {
     position: relative;
