@@ -98,7 +98,8 @@ table {
   line-height: 20px;
   /*transform: translateY(1.5%);*/
   font-family: 'JetBrainsReg', sans-serif;
-  overflow: auto
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 #pythonsnippet {
