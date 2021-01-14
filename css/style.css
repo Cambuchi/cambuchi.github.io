@@ -99,7 +99,7 @@ table {
   /*transform: translateY(1.5%);*/
   font-family: 'JetBrainsReg', sans-serif;
   overflow: auto;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #pythonsnippet {
