@@ -23,7 +23,7 @@
     <div id="pythonsnippet" class="font-roboto-condensed" style="background: #161b22; border:solid #c9d1d9;border-width:.1em .1em .1em .8em;padding:.5em 1em;">
         <table>
             <tr>
-                <td>
+                <td id="guttertd">
                     <pre id="gutter" style="color: #c9d1d9">
 1    
 2   
@@ -36,22 +36,24 @@
 9   
 10  
 11  
-12  </pre>
+12
+13  </pre>
                 </td>
                 <td>
-                    <pre id = "maincode">    <span style="color: #ff7b72">class</span> <span style="color: #ffa657">Cambuchi</span><span style="color: #c9d1d9">:</span>
-        <span style="color: #ff7b72">def</span> <span style="color: #d2a8ff">__init__</span><span style="color: #c9d1d9">(self,</span> <span style="color: #c9d1d9">h</span> <span style="color: #79c0ff">=</span> <span style="color: #a5d6ff">&#39;human&#39;</span><span style="color: #c9d1d9">,</span> <span style="color: #c9d1d9">m</span> <span style="color: #79c0ff">=</span> <span style="color: #a5d6ff">&#39;male&#39;</span><span style="color: #c9d1d9">):</span>
-            <span style="color: #c9d1d9">self</span><span style="color: #79c0ff">.</span><span style="color: #c9d1d9">species</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">h</span>
-            <span style="color: #c9d1d9">self</span><span style="color: #79c0ff">.</span><span style="color: #c9d1d9">display</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">m</span>
-        <span style="color: #c9d1d9">position</span> <span style="color: #79c0ff">=</span> <span style="color: #a5d6ff">&#39;California, USA&#39;</span>
-        <span style="color: #c9d1d9">height</span> <span style="color: #79c0ff">=</span> <span style="color: #d2a8ff">cm</span><span style="color: #c9d1d9">(</span><span style="color: #79c0ff">175</span><span style="color: #c9d1d9">)</span>
-        <span style="color: #c9d1d9">color</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">(</span><span style="color: #79c0ff">229</span><span style="color: #c9d1d9">,</span> <span style="color: #79c0ff">155</span><span style="color: #c9d1d9">,</span> <span style="color: #79c0ff">125</span><span style="color: #c9d1d9">)</span>
-        <span style="color: #c9d1d9">languages</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">{</span><span style="color: #a5d6ff">&#39;python&#39;</span><span style="color: #c9d1d9">:</span> <span style="color: #a5d6ff">&#39;learning&#39;</span><span style="color: #c9d1d9">,</span>
-                     <span style="color: #a5d6ff">&#39;webdev&#39;</span><span style="color: #c9d1d9">:</span> <span style="color: #a5d6ff">&#39;learning&#39;</span><span style="color: #c9d1d9">}</span>
-        <span style="color: #c9d1d9">favorites</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">[</span><span style="color: #a5d6ff">&#39;D&amp;D&#39;</span><span style="color: #c9d1d9">,</span> <span style="color: #a5d6ff">&#39;VR&#39;</span><span style="color: #c9d1d9">,</span> <span style="color: #a5d6ff">&#39;Cooking&#39;</span><span style="color: #c9d1d9">]</span>
-        
-    <span style="color: #75715e"># TODO: Get a job relating to computer programming.</span>
-        </pre>
+                    <pre id = "maincode">
+<span style="color: #ff7b72">class</span> <span style="color: #ffa657">Cambuchi</span><span style="color: #c9d1d9">:</span>
+    <span style="color: #ff7b72">def</span> <span style="color: #d2a8ff">__init__</span><span style="color: #c9d1d9">(self,</span> <span style="color: #c9d1d9">h</span> <span style="color: #79c0ff">=</span> <span style="color: #a5d6ff">&#39;human&#39;</span><span style="color: #c9d1d9">,</span> <span style="color: #c9d1d9">m</span> <span style="color: #79c0ff">=</span> <span style="color: #a5d6ff">&#39;male&#39;</span><span style="color: #c9d1d9">):</span>
+        <span style="color: #c9d1d9">self</span><span style="color: #79c0ff">.</span><span style="color: #c9d1d9">species</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">h</span>
+        <span style="color: #c9d1d9">self</span><span style="color: #79c0ff">.</span><span style="color: #c9d1d9">display</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">m</span>
+    <span style="color: #c9d1d9">position</span> <span style="color: #79c0ff">=</span> <span style="color: #a5d6ff">&#39;California, USA&#39;</span>
+    <span style="color: #c9d1d9">height</span> <span style="color: #79c0ff">=</span> <span style="color: #d2a8ff">cm</span><span style="color: #c9d1d9">(</span><span style="color: #79c0ff">175</span><span style="color: #c9d1d9">)</span>
+    <span style="color: #c9d1d9">color</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">(</span><span style="color: #79c0ff">229</span><span style="color: #c9d1d9">,</span> <span style="color: #79c0ff">155</span><span style="color: #c9d1d9">,</span> <span style="color: #79c0ff">125</span><span style="color: #c9d1d9">)</span>
+    <span style="color: #c9d1d9">languages</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">{</span><span style="color: #a5d6ff">&#39;python&#39;</span><span style="color: #c9d1d9">:</span> <span style="color: #a5d6ff">&#39;learning&#39;</span><span style="color: #c9d1d9">,</span>
+                 <span id="webdev" style="color: #a5d6ff">&#39;webdev&#39;</span><span style="color: #c9d1d9">:</span> <span style="color: #a5d6ff">&#39;learning&#39;</span><span style="color: #c9d1d9">}</span>
+    <span style="color: #c9d1d9">favorites</span> <span style="color: #79c0ff">=</span> <span style="color: #c9d1d9">[</span><span style="color: #a5d6ff">&#39;D&amp;D&#39;</span><span style="color: #c9d1d9">,</span> <span style="color: #a5d6ff">&#39;VR&#39;</span><span style="color: #c9d1d9">,</span> <span style="color: #a5d6ff">&#39;Cooking&#39;</span><span style="color: #c9d1d9">]</span>
+
+<span style="color: #75715e"># TODO: Get a job relating to computer programming.</span>
+                    </pre>
                 </td>
             </tr>
         </table>
@@ -171,4 +173,4 @@
 <footer>
     
 </footer>
-  </html>
+</html>

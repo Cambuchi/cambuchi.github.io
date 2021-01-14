@@ -54,9 +54,13 @@ header {
 }
 
 #container {
-  margin: auto;
-  padding: auto;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
+}
+
+table {
+  margin: 10px 5px 5px 5px
 }
 
 @media (min-width: 1100px) {
@@ -74,16 +78,24 @@ header {
   border-right-color: #c9d1d9;
   border-width: 1px;
   width: 100%;
-  margin: 2px;
-  line-height: 140%;
+  margin: 0px;
+  line-height: 20px;
   font-family: 'JetBrainsReg', sans-serif;
+  font-size: calc(7px + .5vw);
   overflow: auto
 }
 
+#guttertd {
+  display: list-item;
+}
+
 #maincode {
-  margin-bottom: 3px;
-  line-height: 140%;
-  transform: translateY(1.5%);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 5px;
+  line-height: 20px;
+  /*transform: translateY(1.5%);*/
   font-family: 'JetBrainsReg', sans-serif;
   overflow: auto
 }
@@ -91,7 +103,7 @@ header {
 #pythonsnippet {
   border-radius: 15px;
   width: auto;
-  margin: auto;
+  margin: 0.5vw;
   overflow-x: auto;
 }
 
@@ -108,7 +120,30 @@ header {
 
 div#pythonsnippet span {
   font-family: 'JetBrainsReg', sans-serif;
+  font-size: calc(7px + .5vw);
 }
+
+#webdev {
+  position: absolute;
+  transform: translate3d(-46px, 1.45px, 0px);
+}
+
+@media (min-width: 1100px) {
+  #maincode {
+    line-height: 25px;
+    font-size: calc(7px + .5vw);
+
+  }
+  #gutter {
+    line-height: 25px;
+    font-size: calc(7px + .5vw);
+  }
+  #webdev {
+    position: relative;
+    transform: none;
+  }
+}
+
 
 .modal-header {
   font-family: 'JetBrainsReg', sans-serif;
