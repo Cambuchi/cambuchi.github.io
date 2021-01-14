@@ -87,6 +87,7 @@ table {
 
 #guttertd {
   display: list-item;
+  list-style-type: none;
 }
 
 #maincode {
