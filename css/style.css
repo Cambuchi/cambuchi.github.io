@@ -30,9 +30,9 @@
 }
 
 html, body {
-margin: 0px;
-padding: 0px;
-height: 100%
+  margin: 0px;
+  padding: 0px;
+  height: 100%
 }
 
 
@@ -81,7 +81,7 @@ table {
   margin: 0px;
   line-height: 20px;
   font-family: 'JetBrainsReg', sans-serif;
-  font-size: calc(7px + .2vw);
+  font-size: calc(7px + .5vw);
   overflow: auto
 }
 
@@ -95,12 +95,10 @@ table {
   margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 5px;
-  line-height: 1.1em;
-  height: 260px;
+  line-height: 20px;
   /*transform: translateY(1.5%);*/
   font-family: 'JetBrainsReg', sans-serif;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: auto
 }
 
 #pythonsnippet {
@@ -123,24 +121,23 @@ header {
 
 div#pythonsnippet span {
   font-family: 'JetBrainsReg', sans-serif;
-  font-size: calc(7px + .2vw);
+  font-size: calc(7px + .5vw);
 }
 
 #webdev {
   position: absolute;
-  transform: translate3d(-46px, 3.3px, 0px);
+  transform: translate3d(-46px, 1.45px, 0px);
 }
 
 @media (min-width: 1100px) {
   #maincode {
     line-height: 25px;
     font-size: calc(7px + .5vw);
-    height: auto;
+
   }
   #gutter {
     line-height: 25px;
     font-size: calc(7px + .5vw);
-    height: auto;
   }
   #webdev {
     position: relative;
@@ -164,7 +161,7 @@ div#pythonsnippet span {
   width: fit-content;
   border-radius: 15px;
   z-index: 2;
-} 
+}
 
 .nav-wrapper {
   height: fit-content;
@@ -302,7 +299,7 @@ ul {
 }
 
 @-webkit-keyframes animatetop {
-  from {top:-500px; opacity:0} 
+  from {top:-500px; opacity:0}
   to {top:0; opacity:1}
 }
 
@@ -439,7 +436,7 @@ button {
 .page-content h1 {
   text-align: center;
   padding-top: 50px;
-  
+
 }
 
 footer {
