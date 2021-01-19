@@ -197,10 +197,10 @@ body {
 
 @media (max-width: 600px) {
   body {
-    padding: 5vh 0 0 0;
+    padding: 3vh 0 0 0;
   }
   .codeflexparent {
-    margin: 10vh auto 10vh auto;
+    margin: 5vh auto 10vh auto;
     padding: 0.25em 0;
     width: 90%;
     justify-content: center;
@@ -294,6 +294,36 @@ body {
 
 .nav-item:hover > span {
   transform: rotate(0deg);
+}
+
+@media (max-width: 700px) {
+  .nav-item {
+    width: 80px;
+    height: 80px;
+    margin: 25px;
+  }
+  .nav-item a, .nav-item i {
+    font-size: 40px;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-item {
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+  }
+  .nav-item a, .nav-item i {
+    font-size: 25px;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*NAVIGATION MENU CSS END*/
@@ -452,25 +482,27 @@ body {
   }
   .modal-header {
     font-size: 10px;
+    padding-left: 10px
   }
   .modal-body {
-    font-size: calc(10px + .1vw);
+    font-size: calc(0.5px + 3.3vw);
     width: 100%;
     padding: 0px;
   }
   .businesscard {
-    padding-left: 20px;
+    padding-left: 5px;
   }
   .businesscard i {
-    font-size: 10px;
-    width: 10px;
+    font-size: calc(8px + 2vw);
+    width: calc(2px + 4vw);
   }
   .business-text {
     margin-left: 5px;
     margin-right: 5px;
   }
   .modal-body img {
-    margin-right: 0px;
+    margin-right: 1px;
+    margin-right: 2px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
