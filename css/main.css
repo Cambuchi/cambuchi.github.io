@@ -534,9 +534,10 @@ html {
 .pstars-container {
   position: relative;
   z-index: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hide {
+  display: none;
 }
 
 #stars2 {
@@ -579,6 +580,18 @@ html {
   }
   to {
     transform: translateY(-2000px);
+  }
+}
+
+@media only screen and (min-width: 1980px) {
+  .pstars-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .hide {
+    display: -moz-flex;
+    display: flex;
   }
 }
 
