@@ -1,157 +1,47 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-
-<!--CREDIT TO HTML5 BOILERPLATE FOR THE TEMPLATE-->
+<!DOCTYPE html>
+<html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1TPJZXFX2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-G1TPJZXFX2');
-  </script>
-
-  <meta charset="utf-8">
-  <title>Cam's Jams</title>
-  <meta name="description" content="Welcome to Cam's, fam.">
-  <meta name="keywords" content="Cam, Nguyen, Life, Programming, Python">
-  <meta name="author" content="Cam Nguyen">
-
+  <meta charset="utf-8" />
+  <title>
+    cam nguyen | home
+  </title>
+  <meta name="description" content="Welcome to the homepage of Cam Nguyen!">
+  <meta name="keywords" content="Blog">
+  <meta property="og:title" content="cam nguyen | home">
+  <meta property="og:description" content="Welcome to the homepage of Cam Nguyen!">
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://cambuchi.github.io/">
+  <meta property="og:image" content="./src/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="cam nguyen | home">
+  <meta name="twitter:description" content="Welcome to the homepage of Cam Nguyen!">
+  <meta name="twitter:image" content="./src/assets/images/og-image.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="Cam's Jams">
-  <meta property="og:type" content="personal">
-  <meta property="og:url" content="cambuchi.github.io">
-  <meta property="og:image" content="assets/bread.png">
-
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-  <link rel="manifest" href="assets/site.webmanifest">
-  <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#0b0f11">
-</head>
+  <link rel="icon" href="favicon.ico">
+<meta name="description" content="Welcome to the homepage of Cam Nguyen!"><meta name="keywords" content="Blog"><meta property="og:title" content="cam nguyen | home"><meta property="og:description" content="Welcome to the homepage of Cam Nguyen!"><meta property="og:type" content="blog"><meta property="og:url" content="https://cambuchi.github.io/"><meta property="og:image" content="./src/assets/images/og-image.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="cam nguyen | home"><meta name="twitter:description" content="Welcome to the homepage of Cam Nguyen!"><meta name="twitter:image" content="./src/assets/images/og-image.png"><link rel="icon" href="favicon.ico"><script defer src="index.js"></script></head>
 
 <body>
-  <!-- Star Background Container -->
-  <div class="pstars-container">
-    <div id='stars2' class="pstars"></div>
-    <div id='stars2' class="pstars hide"></div>
-    <div id='stars2' class="pstars hide"></div>
-    <div id='stars2' class="pstars hide"></div>
-    <div id='stars3' class="pstars"></div>
-    <div id='stars3' class="pstars hide"></div>
-    <div id='stars3' class="pstars hide"></div>
-    <div id='stars3' class="pstars hide"></div>
-  </div>
-
-  <!-- Python Code Container -->
-  <div class='codeflexparent' id='codecontainer'>
-    <div class='codeflexchildren' id="gutter">
-      <pre class="guttercontent">
-  <span>1  </span>
-  <span>2  </span>
-  <span>3  </span>
-  <span>4  </span>
-  <span>5  </span>
-  <span>6  </span>
-  <span>7  </span>
-  <span>8  </span>
-  <span>9  </span>
-  <span>10 </span>
-  <span>11 </span>
-  <span>12 </span>
-  <span>13 </span>
-  <span>14 </span>
-  <span>15 </span></pre>
-    </div>
-    <div class="codeflexchildren" id="maincode">
-      <pre class="maincodecontent">
-  <span class="red">class </span><span class="orange">Cambuchi</span><span class="grey">: </span>
-  <span class="red">    def </span><span class="purple">__init__</span><span class="grey">(self, h </span><span class="equals">= </span><span class="sblue">'human'</span><span class="grey">, m </span><span class="equals">= </span><span class="sblue">'male'</span><span class="grey">): </span>
-  <span class="grey">        self</span><span class="equals">.</span><span class="grey">species</span><span class="equals"> = </span><span class="grey">h</span>
-  <span class="grey">        self</span><span class="equals">.</span><span class="grey">display</span><span class="equals"> = </span><span class="grey">m</span>
-  <span class="grey">    position</span><span class="equals"> = </span><span class="sblue">'California, USA'</span>
-  <span class="grey">    height</span><span class="equals"> = </span><span class="purple">cm</span><span class="grey">(</span><span class="equals">175</span><span class="grey">)</span>
-  <span class ="grey">    color</span><span class="equals"> = </span><span class ="grey">(</span><span class="equals">229</span><span class ="grey">,</span><span class="equals"> 155</span><span class ="grey">,</span><span class="equals"> 125</span><span class ="grey">)</span>
-  <span class ="grey">    languages</span><span class="equals"> = </span><span class ="grey">{</span><span class="sblue">'python'</span><span class ="grey">:</span><span class="sblue"> 'learning'</span><span class ="grey">,</span>
-  <span class="sblue">                 'webdev'</span><span class="grey">:</span><span class="sblue"> 'learning'</span><span class="grey">}</span>
-  <span class="grey">    favorites</span><span class="equals"> = </span><span class="grey">[</span><span class="sblue">'D&D'</span><span class="grey">,</span><span class="sblue"> 'VR'</span><span class="grey">,</span><span class="sblue"> 'Cooking'</span><span class="grey">]</span>
-
-  <span class="grey">cam_nguyen</span><span class="equals"> = </span><span class="orange">Cambuchi</span><span class="grey">()</span>
-
-  <span class="darkgrey"># TODO: Get a job related to software development.</span>
-      </pre>
-    </div>
-  </div>
-
-  <!-- Navigation Menu -->
-  <ul class="nav-container">
-    <li class="nav-item">
-      <span>
-          <a href="https://stackoverflow.com/users/14546181/cambuchi" title="Stack Overflow">
-            <i class="fab fa-stack-overflow">
-            </i>
-          </a>
-      </span>
-    </li>
-    <li class="nav-item">
-      <span>
-        <a href="https://github.com/Cambuchi" title="GitHub">
-          <i class="fab fa-github">
-          </i>
-        </a>
-      </span>
-    </li>
-    <li class="nav-item">
-      <span>
-          <i class="fas fa-address-card" id="myBtn" title="Contact Info">
-          </i>
-      </span>
-    </li>
-    <li class="nav-item">
-      <span>
-        <a href="https://cambuchi.github.io/resume/" title="Resume">
-          <i class="fas fa-file-alt">
-          </i>
-        </a>
-      </span>
-    </li>
-  </ul>
-
-  <!-- Modal content -->
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Contact me here:</h2>
-        <span class="close">&times;</span>
-      </div>
-      <div class="modal-body">
-        <img src="assets/me.jpg" alt="Hi and thanks for visiting my site! -Cam">
-        <ul class="businesscard">
-          <li><i class="fas fa-envelope business-social"></i><span class ="business-text">cam.manh.nguyen@gmail.com</span></li>
-          <li><i class="fas fa-phone business-social"></i><span class ="business-text">+1 541-913-1180</span></li>
-          <li><i class="fab fa-linkedin business-social"></i><span class ="business-text"><a href="https://www.linkedin.com/in/cam-nguyen-6a1ab257/" title="Linkedin">linkedin</a></span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      // color: 0x194972, // light blue
+      // color: 0xb1e, // dark blue
+      color: 0x50505, //dark grey
+      shininess: 20.00,
+      waveSpeed: 0.50,
+      zoom: 0.85
+    })
+  </script>
 </body>
 
 </html>

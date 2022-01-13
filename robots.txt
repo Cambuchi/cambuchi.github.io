@@ -1,8 +1,0 @@
-# www.robotstxt.org/
-
-I don't know why you're crawling this page but please don't do anything that would take it down.
-If you need to scrape, please limit requests to 1 per minute. Thanks.
-
-# Allow crawling of all content
-User-agent: *
-Disallow:
